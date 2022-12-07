@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">FoodRunner</string>
-    <string name="mobile_number_10_digits">Número de móvil (10 dígitos)</string>
+    <string name="mobile_number_10_digits">Número de móvil (8 dígitos)</string>
     <string name="Password">Contraseña</string>
     <string name="login">Iniciar sesión</string>
     <string name="forgot_password">¿Has olvidado tu contraseña?</string>
@@ -26,9 +26,9 @@
     <string name="register">Registro</string>
     <string name="_300_person">300/person</string>
     <string name="_4_5">4.5</string>
-    <string name="kartikey_sharma">Kartikey Sharma</string>
-    <string name="pind_tadka">Pind Tadka</string>
-    <string name="_22_12_2018">22/12/2018</string>
+    <string name="kartikey_sharma">DEVELOPERS</string>
+    <string name="pind_tadka">DEV</string>
+    <string name="_22_12_2018">07/12/2022</string>
     <string name="rs_200">Usd.2.50</string>
     <string name="cost_low_to_high">Costo (de menor a mayor)</string>
     <string name="cost_high_to_low">Costo (de mayor a menor)</string>
@@ -43,7 +43,7 @@
     <string name="you_do_not_have_any_favourite_restaurants">No tienes ningún restaurante favorito</string>
     <string name="you_haven_t_placed_any_orders_yet">¡Aún no ha realizado ningún pedido!</string>
     <string name="rs_400">Usd. 5.00</string>
-    <string name="default_number">+91 1234567890</string>
+    <string name="default_number">+503 12345678</string>
     <string name="no_restaurants_found">No se encontraron restaurantes</string>
 
     <!-- Questions and Answers for FAQs-->
