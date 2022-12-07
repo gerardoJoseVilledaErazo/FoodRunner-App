@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">FoodRunner</string>
+    <string name="mobile_number_10_digits">Número de móvil (10 dígitos)</string>
+    <string name="Password">Contraseña</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="forgot_password">¿Has olvidado tu contraseña?</string>
+    <string name="don_t_have_an_account_sign_up_now">¿No tienes una cuenta? Regístrate ahora.</string>
+    <string name="shared_preferences">RestaurantPreference</string> <!--no modificar por favor-->
+    <string name="open_drawer">Abrir</string>
+    <string name="close_drawer">Cerrar</string>
+    <string name="add_to_cart_btn">Agregar</string>
+    <string name="proceed_to_cart_btn">Proceder al carrito</string>
+    <string name="choose_from_menu_listed_below">Elija del menú que se detalla a continuación:</string>
+    <string name="ordering_from">Ordenando desde: </string>
+    <string name="place_order">Realizar pedido (USD)</string>
+
+    <string name="your_previous_orders_are_listed_below">Sus pedidos anteriores se enumeran a continuación:</string>
+    <string name="your_order_has_been_placed_successfully">¡Tu pedido ha sido realizado con éxito!</string>
+    <string name="ok">OK</string>
+    <string name="search_restaurants">Buscar Restaurantes</string>
+    <string name="enter_the_otp_received_below">Enter the OTP received below</string>
+    <string name="otp_4_characters">OTP (4 characters)</string>
+    <string name="otp_will_be_send_to_the_registered_email">OTP se enviará a la identificación de correo electrónico registrada</string>
+    <string name="enter_the_following_details">Ingrese los siguientes detalles</string>
+    <string name="next">Siguiente</string>
+    <string name="register">Registro</string>
+    <string name="_300_person">300/person</string>
+    <string name="_4_5">4.5</string>
+    <string name="kartikey_sharma">Kartikey Sharma</string>
+    <string name="pind_tadka">Pind Tadka</string>
+    <string name="_22_12_2018">22/12/2018</string>
+    <string name="rs_200">Usd.2.50</string>
+    <string name="cost_low_to_high">Costo (de menor a mayor)</string>
+    <string name="cost_high_to_low">Costo (de mayor a menor)</string>
+    <string name="rating">Clasificación</string>
+    <string name="add">Agregar</string>
+    <string name="remove">Eliminar</string>
+    <string name="name_min_3_characters">Nombre (mínimo 3 caracteres))</string>
+    <string name="email_address">Dirección de correo electrónico</string>
+    <string name="delivery_address">Dirección de entrega</string>
+    <string name="password_min_4_digits">Contraseña (mínimo 4 dígitos)</string>
+    <string name="confirm_password">Confirmar contraseña</string>
+    <string name="you_do_not_have_any_favourite_restaurants">No tienes ningún restaurante favorito</string>
+    <string name="you_haven_t_placed_any_orders_yet">¡Aún no ha realizado ningún pedido!</string>
+    <string name="rs_400">Usd. 5.00</string>
+    <string name="default_number">+91 1234567890</string>
+    <string name="no_restaurants_found">No se encontraron restaurantes</string>
+
+    <!-- Questions and Answers for FAQs-->
+    <string name="question1">Q1. ¿Por qué Food Runner está haciendo esto?</string>
+    <string name="answer1">A1. En Food Runner siempre nos esforzamos por agregar valor a su negocio. Entendemos los desafíos a los que se enfrenta a diario para obtener material de embalaje de la mejor calidad. Food Runner Packaging Assist está aquí para encargarse de todas sus necesidades de embalaje.</string>
+    <string name="question2">Q2. ¿En qué se diferencian de otras aplicaciones de entrega?</string>
+    <string name="answer2">
+        A2. Los mejores productos: solo enumeramos los productos que han superado nuestras pruebas y son los más adecuados para la entrega.
+        Ayudarán a brindar una mejor experiencia al consumidor, para que pueda obtener pedidos repetidos de clientes satisfechos.\n\nLos mejores precios - Hemos
+        negociado tarifas con nuestros distribuidores exclusivamente para Restaurante FoodRunner.\n\nComodidad: no es necesario regatear los precios.
+        No es necesario hacer un seguimiento de la entrega. Hacemos un seguimiento de todos los pedidos para garantizar que tenga una experiencia sin problemas.</string>
+    <string name="question3">Q3. ¿Puedo pedir en 2 o más restaurantes al mismo tiempo?</string>
+    <string name="answer3">A3. No. Por el momento solo permitimos realizar pedidos de un restaurante. Cada restaurante tiene una gran variedad para elegir y creemos que no se sentirá decepcionado.</string>
+    <string name="question4">Q4. ¿Cómo sé que mi pedido ha sido confirmado?</string>
+    <string name="answer4">A4. Te enviaremos una notificación a tu móvil cada vez que realices un pedido. También podrá ver el pedido en Historial de pedidos una vez que se haya realizado correctamente.</string>
+    <string name="question5">Q5. ¿Cuándo obtendrán más restaurantes como socios?</string>
+    <string name="answer5">A5. Nos gustaría hacer entregas a tantos restaurantes como sea posible. Sin embargo, debemos establecer un acuerdo de relación con el restaurante para convertirnos en socios con ellos.\n\nPuede ayudar diciéndole al propietario/gerente de su restaurante favorito que desea que le entreguemos su comida.</string>
+    <string name="register_yourself">Regístrese usted mismo</string>
+    <string name="new_password_min_4_digits">Nueva contraseña (mínimo 4 dígitos)</string>
+    <string name="submit">Enviar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
