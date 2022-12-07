@@ -29,7 +29,7 @@ class OrderPlacedActivity : AppCompatActivity() {
     override fun onBackPressed() {
         Toast.makeText(
             this@OrderPlacedActivity,
-            "Press OK for Main Menu",
+            "Presione OK para el menú principal",
             Toast.LENGTH_SHORT
         )
             .show()

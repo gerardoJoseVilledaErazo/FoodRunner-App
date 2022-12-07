@@ -106,7 +106,7 @@ class RestaurantMenuActivity : AppCompatActivity() {
                     {
                         Toast.makeText(
                             this,
-                            "Some Error occurred!",
+                            "¡Ocurrió algún error!",
                             Toast.LENGTH_SHORT
                         ).show()
 
@@ -124,7 +124,7 @@ class RestaurantMenuActivity : AppCompatActivity() {
             } catch (e: JSONException) {
                 Toast.makeText(
                     this,
-                    "Some Unexpected error occurred!",
+                    "¡Ocurrió un error inesperado!",
                     Toast.LENGTH_SHORT
                 ).show()
             }
