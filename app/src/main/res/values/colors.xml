@@ -8,4 +8,6 @@
     <color name="colorBlack">#000000</color>
     <color name="cost_for_one">#757575</color>
     <color name="colorGrey">#909090</color>
+
+    <color name="colorper">#344D67</color>
 </resources>

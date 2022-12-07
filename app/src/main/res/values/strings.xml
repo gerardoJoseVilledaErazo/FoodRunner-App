@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FoodRunner</string>
+    <string name="app_name">LetsEAT</string>
     <string name="mobile_number_10_digits">Número de móvil (8 dígitos)</string>
     <string name="Password">Contraseña</string>
     <string name="login">Iniciar sesión</string>
