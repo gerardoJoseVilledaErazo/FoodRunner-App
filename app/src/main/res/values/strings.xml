@@ -35,7 +35,7 @@
     <string name="rating">Clasificación</string>
     <string name="add">Agregar</string>
     <string name="remove">Eliminar</string>
-    <string name="name_min_3_characters">Nombre (mínimo 3 caracteres))</string>
+    <string name="name_min_3_characters">Nombre (mínimo 3 caracteres)</string>
     <string name="email_address">Dirección de correo electrónico</string>
     <string name="delivery_address">Dirección de entrega</string>
     <string name="password_min_4_digits">Contraseña (mínimo 4 dígitos)</string>

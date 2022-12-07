@@ -60,7 +60,7 @@ class DashboardActivity : AppCompatActivity() {
 
         //default user details
         txtCurrentUser.text = sharedPreferences.getString("name", "Kartikey Sharma")
-        txtMobileNumber.text = "+91-" + sharedPreferences.getString("mobile_number", "9876543210")
+        txtMobileNumber.text = "+503-" + sharedPreferences.getString("mobile_number", "9876543210")
 
         val actionBarDrawerToggle = ActionBarDrawerToggle(
             this@DashboardActivity,
@@ -221,7 +221,7 @@ class DashboardActivity : AppCompatActivity() {
 
     fun setToolBar() {
         setSupportActionBar(toolbar)
-        supportActionBar?.title = "All Restaurants"
+        supportActionBar?.title = "Todos los Restaurantes"
         supportActionBar?.setHomeButtonEnabled(true)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_menu)
