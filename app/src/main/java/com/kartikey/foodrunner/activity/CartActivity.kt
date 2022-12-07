@@ -105,7 +105,7 @@ class CartActivity : AppCompatActivity() {
                             if (success) {
                                 Toast.makeText(
                                     this,
-                                    "Order Placed",
+                                    "Pedido realizado",
                                     Toast.LENGTH_SHORT
                                 ).show()
                                 //send a notification to the user regarding his order
@@ -131,7 +131,7 @@ class CartActivity : AppCompatActivity() {
                         {
                             Toast.makeText(
                                 this,
-                                "Some Error occurred!!!",
+                                "¡¡¡Ocurrió algún error!!!",
                                 Toast.LENGTH_SHORT
                             ).show()
 
@@ -148,7 +148,7 @@ class CartActivity : AppCompatActivity() {
                 } catch (e: JSONException) {
                     Toast.makeText(
                         this,
-                        "Some unexpected error occurred!",
+                        "¡Ocurrió un error inesperado!",
                         Toast.LENGTH_SHORT
                     ).show()
 
@@ -157,15 +157,15 @@ class CartActivity : AppCompatActivity() {
             } else {
 
                 val alterDialog = androidx.appcompat.app.AlertDialog.Builder(this)
-                alterDialog.setTitle("No Internet")
-                alterDialog.setMessage("Internet Connection can't be established!")
-                alterDialog.setPositiveButton("Open Settings")
+                alterDialog.setTitle("Sin internet")
+                alterDialog.setMessage("¡No se puede establecer la conexión a Internet!")
+                alterDialog.setPositiveButton("Abrrir Settings")
                 { _, _ ->
                     val settingsIntent = Intent(Settings.ACTION_SETTINGS)
                     startActivity(settingsIntent)
                 }
 
-                alterDialog.setNegativeButton("Exit")
+                alterDialog.setNegativeButton("Salir")
                 { _, _ ->
                     finishAffinity()
                 }
@@ -233,7 +233,7 @@ class CartActivity : AppCompatActivity() {
                             }
 
                             //set the total on the button
-                            btnPlaceOrder.text = "Place Order (Total Cost: Rs. $totalCost)"
+                            btnPlaceOrder.text = "Realizar pedido (Costo total: Usd. $totalCost)"
                         }
                         progressLayout.visibility = View.GONE
                     },
@@ -242,7 +242,7 @@ class CartActivity : AppCompatActivity() {
 
                         Toast.makeText(
                             this,
-                            "Some Error occurred!",
+                            "¡Ocurrió algún error!",
                             Toast.LENGTH_SHORT
                         ).show()
                         progressLayout.visibility = View.GONE
@@ -260,7 +260,7 @@ class CartActivity : AppCompatActivity() {
             } catch (e: JSONException) {
                 Toast.makeText(
                     this,
-                    "Some Unexpected error occurred!",
+                    "¡Ocurrió un error inesperado!",
                     Toast.LENGTH_SHORT
                 ).show()
             }
@@ -268,14 +268,14 @@ class CartActivity : AppCompatActivity() {
         } else {
 
             val alterDialog = androidx.appcompat.app.AlertDialog.Builder(this)
-            alterDialog.setTitle("No Internet")
-            alterDialog.setMessage("Internet Connection can't be established!")
-            alterDialog.setPositiveButton("Open Settings")
+            alterDialog.setTitle("Sin internet")
+            alterDialog.setMessage("¡No se puede establecer la conexión a Internet!")
+            alterDialog.setPositiveButton("Abrir Settings")
             { _, _ ->
                 val settingsIntent = Intent(Settings.ACTION_SETTINGS)
                 startActivity(settingsIntent)
             }
-            alterDialog.setNegativeButton("Exit")
+            alterDialog.setNegativeButton("Salir")
             { _, _ ->
                 finishAffinity()
             }
@@ -288,7 +288,7 @@ class CartActivity : AppCompatActivity() {
 
     fun setToolBar() {
         setSupportActionBar(toolbar)
-        supportActionBar?.title = "My Cart"
+        supportActionBar?.title = "Mi carrito"
         supportActionBar?.setHomeButtonEnabled(true)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_white_back_arrow)
@@ -334,11 +334,11 @@ class CartActivity : AppCompatActivity() {
         val channelId = "personal_notification"
         val notificationBuilder = NotificationCompat.Builder(this, channelId)
         notificationBuilder.setSmallIcon(R.drawable.food_runner_logo)
-        notificationBuilder.setContentTitle("Order Placed")
-        notificationBuilder.setContentText("Your order has been placed successfully!")
+        notificationBuilder.setContentTitle("Pedido realizado")
+        notificationBuilder.setContentText("¡Tu pedido ha sido realizado con éxito!")
         notificationBuilder.setStyle(
             NotificationCompat.BigTextStyle()
-                .bigText("Ordered from ${restaurantName} and amounting to Rs.${totalCost} .Thank you for ordering from FoodRunner. Stay Safe!")
+                .bigText("Ordenado desde ${restaurantName} y que asciende a Usd.${totalCost} .Gracias por ordenar de FoodRunner. ¡Mantente a salvo!")
         )
         notificationBuilder.priority = NotificationCompat.PRIORITY_DEFAULT
         val notificationManagerCompat = NotificationManagerCompat.from(this)
