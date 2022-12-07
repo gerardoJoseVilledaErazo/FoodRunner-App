@@ -14,7 +14,7 @@
     <string name="ordering_from">Ordenando desde: </string>
     <string name="place_order">Realizar pedido (USD)</string>
 
-    <string name="your_previous_orders_are_listed_below">Sus pedidos anteriores se enumeran a continuación:</string>
+    <string name="your_previous_orders_are_listed_below">Sus pedidos anteriores:</string>
     <string name="your_order_has_been_placed_successfully">¡Tu pedido ha sido realizado con éxito!</string>
     <string name="ok">OK</string>
     <string name="search_restaurants">Buscar Restaurantes</string>
