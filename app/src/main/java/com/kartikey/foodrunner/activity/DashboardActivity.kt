@@ -107,11 +107,11 @@ class DashboardActivity : AppCompatActivity() {
                         )
                         .commit()
 
-                    supportActionBar?.title = "My Profile"
+                    supportActionBar?.title = "Mi perfil"
                     drawerLayout.closeDrawers()
                     Toast.makeText(
                         this@DashboardActivity,
-                        "My Profile",
+                        "Mi perfil",
                         Toast.LENGTH_SHORT
                     )
                         .show()
@@ -126,7 +126,7 @@ class DashboardActivity : AppCompatActivity() {
                         )
                         .commit()
 
-                    supportActionBar?.title = "Favourite Restaurants"
+                    supportActionBar?.title = "Restaurantes favoritos"
                     drawerLayout.closeDrawers()
 
                 }
@@ -135,12 +135,12 @@ class DashboardActivity : AppCompatActivity() {
                     supportFragmentManager.beginTransaction().replace(
                         R.id.frameLayout, OrderHistoryFragment()
                     ).commit()
-                    supportActionBar?.title = "My Previous Orders"
+                    supportActionBar?.title = "Mis pedidos anteriores"
                     drawerLayout.closeDrawers()
 
                     Toast.makeText(
                         this@DashboardActivity,
-                        "Order History",
+                        "Historial de pedidos",
                         Toast.LENGTH_SHORT
                     ).show()
 
@@ -154,7 +154,7 @@ class DashboardActivity : AppCompatActivity() {
                         )
                         .commit()
 
-                    supportActionBar?.title = "Frequently Asked Questions"
+                    supportActionBar?.title = "Preguntas frecuentes"
                     drawerLayout.closeDrawers()
 
                     Toast.makeText(
@@ -168,9 +168,9 @@ class DashboardActivity : AppCompatActivity() {
                     drawerLayout.closeDrawers()
 
                     val alterDialog = androidx.appcompat.app.AlertDialog.Builder(this)
-                    alterDialog.setTitle("Confirmation")
-                    alterDialog.setMessage("Are you sure you want to log out?")
-                    alterDialog.setPositiveButton("Yes")
+                    alterDialog.setTitle("Confirmación")
+                    alterDialog.setMessage("¿Está seguro de que desea cerrar la sesión?")
+                    alterDialog.setPositiveButton("Si")
                     { _, _ ->
                         sharedPreferences.edit().putBoolean("user_logged_in", false).apply()
                         val intent =
@@ -235,7 +235,7 @@ class DashboardActivity : AppCompatActivity() {
         )
         transaction.commit()
 
-        supportActionBar?.title = "All Restaurants"
+        supportActionBar?.title = "Todos los Restaurantes"
         navigationView.setCheckedItem(R.id.home)
     }
 
