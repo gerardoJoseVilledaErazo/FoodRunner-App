@@ -131,7 +131,7 @@ class FavouriteRestaurantFragment(val contextParam: Context) : Fragment() {
                     Response.ErrorListener {
                         Toast.makeText(
                             activity as Context,
-                            "mSome Error occurred!",
+                            "¡Ocurrió algún error!",
                             Toast.LENGTH_SHORT
                         ).show()
                         progressDialog.visibility = View.GONE
@@ -148,7 +148,7 @@ class FavouriteRestaurantFragment(val contextParam: Context) : Fragment() {
             } catch (e: JSONException) {
                 Toast.makeText(
                     activity as Context,
-                    "Some Unexpected error occurred!",
+                    "¡Ocurrió un error inesperado!",
                     Toast.LENGTH_SHORT
                 )
                     .show()
@@ -156,14 +156,14 @@ class FavouriteRestaurantFragment(val contextParam: Context) : Fragment() {
         } else {
 
             val alterDialog = androidx.appcompat.app.AlertDialog.Builder(activity as Context)
-            alterDialog.setTitle("No Internet")
-            alterDialog.setMessage("Internet Connection can't be established!")
-            alterDialog.setPositiveButton("Open Settings")
+            alterDialog.setTitle("Sin internet")
+            alterDialog.setMessage("¡No se puede establecer la conexión a Internet!")
+            alterDialog.setPositiveButton("Abrir Settings")
             { _, _ ->
                 val settingsIntent = Intent(Settings.ACTION_SETTINGS)
                 startActivity(settingsIntent)
             }
-            alterDialog.setNegativeButton("Exit")
+            alterDialog.setNegativeButton("Salir")
             { _, _ ->
                 ActivityCompat.finishAffinity(activity as Activity)
             }
@@ -204,14 +204,14 @@ class FavouriteRestaurantFragment(val contextParam: Context) : Fragment() {
             fetchData()
         } else {
             val alterDialog = androidx.appcompat.app.AlertDialog.Builder(activity as Context)
-            alterDialog.setTitle("No Internet")
-            alterDialog.setMessage("Internet Connection can't be established!")
-            alterDialog.setPositiveButton("Open Settings")
+            alterDialog.setTitle("Sin internet")
+            alterDialog.setMessage("¡No se puede establecer la conexión a Internet!")
+            alterDialog.setPositiveButton("Abrir Settings")
             { _, _ ->
                 val settingsIntent = Intent(Settings.ACTION_SETTINGS)
                 startActivity(settingsIntent)
             }
-            alterDialog.setNegativeButton("Exit")
+            alterDialog.setNegativeButton("Salir")
             { _, _ ->
                 ActivityCompat.finishAffinity(activity as Activity)
             }

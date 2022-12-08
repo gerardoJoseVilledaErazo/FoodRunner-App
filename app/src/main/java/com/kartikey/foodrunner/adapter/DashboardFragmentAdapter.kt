@@ -55,7 +55,7 @@ class DashboardFragmentAdapter(val context: Context, var itemList: ArrayList<Res
                 } else {
                     Toast.makeText(
                         context,
-                        "Some error occurred!",
+                        "¡Ocurrió algún error!",
                         Toast.LENGTH_SHORT
                     )
                         .show()
@@ -71,7 +71,7 @@ class DashboardFragmentAdapter(val context: Context, var itemList: ArrayList<Res
                 } else {
                     Toast.makeText(
                         context,
-                        "Some error occurred!",
+                        "¡Ocurrió algún error!",
                         Toast.LENGTH_SHORT
                     )
                         .show()
@@ -90,7 +90,7 @@ class DashboardFragmentAdapter(val context: Context, var itemList: ArrayList<Res
 
         holder.txtRestaurantName.setTag(restaurant.restaurantId + "")
         holder.txtRestaurantName.text = restaurant.restaurantName
-        holder.txtPricePerPerson.text = restaurant.costForOne + "/Person "
+        holder.txtPricePerPerson.text = restaurant.costForOne + "/Persona "
         holder.txtRating.text = restaurant.restaurantRating
         Picasso.get().load(restaurant.restaurantImage).error(R.drawable.ic_default_image_restaurant)
             .into(holder.imgRestaurant)

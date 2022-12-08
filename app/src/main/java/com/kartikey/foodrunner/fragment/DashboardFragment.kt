@@ -164,7 +164,7 @@ class DashboardFragment(val contextParam: Context) : Fragment() {
                         progressDialog.visibility = View.GONE
                         Toast.makeText(
                             activity as Context,
-                            "Some Error occurred!",
+                            "¡Ocurrió algún error!",
                             Toast.LENGTH_SHORT
                         ).show()
                     }) {
@@ -180,7 +180,7 @@ class DashboardFragment(val contextParam: Context) : Fragment() {
             } catch (e: JSONException) {
                 Toast.makeText(
                     activity as Context,
-                    "Some Unexpected error occurred!",
+                    "¡Ocurrió un error inesperado!",
                     Toast.LENGTH_SHORT
                 )
                     .show()
@@ -188,14 +188,14 @@ class DashboardFragment(val contextParam: Context) : Fragment() {
         } else {
 
             val alterDialog = androidx.appcompat.app.AlertDialog.Builder(activity as Context)
-            alterDialog.setTitle("No Internet")
-            alterDialog.setMessage("Internet Connection can't be established!")
-            alterDialog.setPositiveButton("Open Settings")
+            alterDialog.setTitle("Sin internet")
+            alterDialog.setMessage("¡No se puede establecer la conexión a Internet!")
+            alterDialog.setPositiveButton("Abrir Settings")
             { _, _ ->
                 val settingsIntent = Intent(Settings.ACTION_SETTINGS)
                 startActivity(settingsIntent)
             }
-            alterDialog.setNegativeButton("Exit")
+            alterDialog.setNegativeButton("Salir")
             { _, _ ->
                 ActivityCompat.finishAffinity(activity as Activity)
             }
@@ -222,7 +222,7 @@ class DashboardFragment(val contextParam: Context) : Fragment() {
                     null
                 )     //radiobutton view for sorting display
                 val alterDialog = androidx.appcompat.app.AlertDialog.Builder(activity as Context)
-                alterDialog.setTitle("Sort By?")
+                alterDialog.setTitle("¿Ordenar por?")
                 alterDialog.setView(radioButtonView)
                 alterDialog.setPositiveButton("OK")
                 { _, _ ->
@@ -241,7 +241,7 @@ class DashboardFragment(val contextParam: Context) : Fragment() {
                         dashboardAdapter.notifyDataSetChanged()
                     }
                 }
-                alterDialog.setNegativeButton("CANCEL")
+                alterDialog.setNegativeButton("CANCELAR")
                 { _, _ ->
                     //do nothing
                 }
@@ -259,14 +259,14 @@ class DashboardFragment(val contextParam: Context) : Fragment() {
                 fetchData()
         } else {
             val alterDialog = androidx.appcompat.app.AlertDialog.Builder(activity as Context)
-            alterDialog.setTitle("No Internet")
-            alterDialog.setMessage("Internet Connection can't be established!")
-            alterDialog.setPositiveButton("Open Settings")
+            alterDialog.setTitle("Sin internet")
+            alterDialog.setMessage("¡No se puede establecer la conexión a Internet!")
+            alterDialog.setPositiveButton("Abrir Settings")
             { _, _ ->
                 val settingsIntent = Intent(Settings.ACTION_SETTINGS)
                 startActivity(settingsIntent)
             }
-            alterDialog.setNegativeButton("Exit")
+            alterDialog.setNegativeButton("Salida")
             { _, _ ->
                 ActivityCompat.finishAffinity(activity as Activity)
             }

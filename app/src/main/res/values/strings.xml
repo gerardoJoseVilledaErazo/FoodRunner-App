@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FoodRunner</string>
+    <string name="app_name">LetsEAT</string>
     <string name="mobile_number_10_digits">Número de móvil (10 dígitos)</string>
     <string name="Password">Contraseña</string>
     <string name="login">Iniciar sesión</string>
@@ -18,21 +18,21 @@
     <string name="your_order_has_been_placed_successfully">¡Tu pedido ha sido realizado con éxito!</string>
     <string name="ok">OK</string>
     <string name="search_restaurants">Buscar Restaurantes</string>
-    <string name="enter_the_otp_received_below">Enter the OTP received below</string>
-    <string name="otp_4_characters">OTP (4 characters)</string>
+    <string name="enter_the_otp_received_below">Ingrese la OTP(One-Time Password) recibida a continuación</string>
+    <string name="otp_4_characters">OTP (4 caracteres)</string>
     <string name="otp_will_be_send_to_the_registered_email">OTP se enviará a la identificación de correo electrónico registrada</string>
     <string name="enter_the_following_details">Ingrese los siguientes detalles</string>
     <string name="next">Siguiente</string>
     <string name="register">Registro</string>
-    <string name="_300_person">300/person</string>
+    <string name="_300_person">300/persona</string>
     <string name="_4_5">4.5</string>
-    <string name="kartikey_sharma">Kartikey Sharma</string>
-    <string name="pind_tadka">Pind Tadka</string>
-    <string name="_22_12_2018">22/12/2018</string>
+    <string name="kartikey_sharma">Developers</string>
+    <string name="pind_tadka">Devs</string>
+    <string name="_22_12_2018">08/12/2022</string>
     <string name="rs_200">Usd.2.50</string>
     <string name="cost_low_to_high">Costo (de menor a mayor)</string>
     <string name="cost_high_to_low">Costo (de mayor a menor)</string>
-    <string name="rating">Clasificación</string>
+    <string name="rating">Por Clasificación</string>
     <string name="add">Agregar</string>
     <string name="remove">Eliminar</string>
     <string name="name_min_3_characters">Nombre (mínimo 3 caracteres)</string>
@@ -43,7 +43,7 @@
     <string name="you_do_not_have_any_favourite_restaurants">No tienes ningún restaurante favorito</string>
     <string name="you_haven_t_placed_any_orders_yet">¡Aún no ha realizado ningún pedido!</string>
     <string name="rs_400">Usd. 5.00</string>
-    <string name="default_number">+91 1234567890</string>
+    <string name="default_number">+503 7234567890</string>
     <string name="no_restaurants_found">No se encontraron restaurantes</string>
 
     <!-- Questions and Answers for FAQs-->
@@ -66,4 +66,10 @@
     <string name="submit">Enviar</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cerrar_sesi_n">Cerrar sesión</string>
+    <string name="historial_de_pedidos">Historial de pedidos</string>
+    <string name="restaurantes_favoritos">Restaurantes favoritos</string>
+    <string name="mi_perfil">Mi perfil</string>
+    <string name="inicio">Inicio</string>
+    <string name="faqs_preguntas_frecuentes">FAQs(Preguntas frecuentes)</string>
 </resources>

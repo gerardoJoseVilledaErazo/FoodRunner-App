@@ -135,7 +135,7 @@ class RegisterFragment(val contextParam: Context) : Fragment() {
 
                                 Toast.makeText(
                                     contextParam,
-                                    "Registered successfully",
+                                    "Registrado correctamente",
                                     Toast.LENGTH_SHORT
                                 ).show()
 
@@ -157,7 +157,7 @@ class RegisterFragment(val contextParam: Context) : Fragment() {
                             registerProgressDialog.visibility = View.GONE
                             Toast.makeText(
                                 contextParam,
-                                "Some Error occurred!",
+                                "¡Ocurrió algún error!",
                                 Toast.LENGTH_SHORT
                             ).show()
 
@@ -174,21 +174,21 @@ class RegisterFragment(val contextParam: Context) : Fragment() {
                 } catch (e: JSONException) {
                     Toast.makeText(
                         contextParam,
-                        "Some unexpected error occurred!",
+                        "¡Ocurrió un error inesperado!",
                         Toast.LENGTH_SHORT
                     ).show()
                 }
             }
         } else {
             val alterDialog = androidx.appcompat.app.AlertDialog.Builder(activity as Context)
-            alterDialog.setTitle("No Internet")
-            alterDialog.setMessage("Internet Connection can't be established!")
-            alterDialog.setPositiveButton("Open Settings")
+            alterDialog.setTitle("Sin internet")
+            alterDialog.setMessage("¡No se puede establecer la conexión a Internet!")
+            alterDialog.setPositiveButton("Abrir Settings")
             { _, _ ->
                 val settingsIntent = Intent(Settings.ACTION_SETTINGS)
                 startActivity(settingsIntent)
             }
-            alterDialog.setNegativeButton("Exit")
+            alterDialog.setNegativeButton("Salir")
             { _, _ ->
                 ActivityCompat.finishAffinity(activity as Activity)
             }
@@ -201,32 +201,32 @@ class RegisterFragment(val contextParam: Context) : Fragment() {
         //errorPassCount determines if there are any errors or not
         var errorPassCount = 0
         if (etName.text.isBlank()) {
-            etName.error = "Field Missing!"
+            etName.error = "¡Falta el campo!"
         } else {
             errorPassCount++
         }
         if (etMobileNumber.text.isBlank()) {
-            etMobileNumber.error = "Field Missing!"
+            etMobileNumber.error = "¡Falta el campo!"
         } else {
             errorPassCount++
         }
         if (etEmail.text.isBlank()) {
-            etEmail.error = "Field Missing!"
+            etEmail.error = "¡Falta el campo!"
         } else {
             errorPassCount++
         }
         if (etDeliveryAddress.text.isBlank()) {
-            etDeliveryAddress.setError("Field Missing!")
+            etDeliveryAddress.setError("¡Falta el campo!")
         } else {
             errorPassCount++
         }
         if (etConfirmPassword.text.isBlank()) {
-            etConfirmPassword.setError("Field Missing!")
+            etConfirmPassword.setError("¡Falta el campo!")
         } else {
             errorPassCount++
         }
         if (etPassword.text.isBlank()) {
-            etPassword.setError("Field Missing!")
+            etPassword.setError("¡Falta el campo!")
         } else {
             errorPassCount++
         }
@@ -234,7 +234,7 @@ class RegisterFragment(val contextParam: Context) : Fragment() {
             if (etPassword.text.toString().toInt() == etConfirmPassword.text.toString().toInt()) {
                 errorPassCount++
             } else {
-                etConfirmPassword.setError("Confirmed Password doesn't match")
+                etConfirmPassword.setError("La contraseña confirmada no coincide")
             }
         }
         return errorPassCount == 7
@@ -244,14 +244,14 @@ class RegisterFragment(val contextParam: Context) : Fragment() {
         if (!ConnectionManager().checkConnectivity(activity as Context)) {
 
             val alterDialog = androidx.appcompat.app.AlertDialog.Builder(activity as Context)
-            alterDialog.setTitle("No Internet")
-            alterDialog.setMessage("Internet Connection can't be established!")
-            alterDialog.setPositiveButton("Open Settings")
+            alterDialog.setTitle("Sin internet")
+            alterDialog.setMessage("¡No se puede establecer la conexión a Internet!")
+            alterDialog.setPositiveButton("Abrir Settings")
             { _, _ ->
                 val settingsIntent = Intent(Settings.ACTION_SETTINGS)
                 startActivity(settingsIntent)
             }
-            alterDialog.setNegativeButton("Exit")
+            alterDialog.setNegativeButton("Salir")
             { _, _ ->
                 ActivityCompat.finishAffinity(activity as Activity)
             }

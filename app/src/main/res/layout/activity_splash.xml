@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorLogoMain"
+    android:background="@color/colorper"
     tools:context=".activity.SplashActivity">
 
     <ImageView
@@ -12,7 +12,7 @@
         android:layout_height="225dp"
         android:layout_centerInParent="true"
         android:padding="10dp"
-        android:src="@drawable/food_runner_logo"
+        android:src="@drawable/logo11"
         tools:ignore="ContentDescription" />
     <!--
         <TextView

@@ -132,14 +132,14 @@ class RestaurantMenuActivity : AppCompatActivity() {
         } else {
 
             val alterDialog = androidx.appcompat.app.AlertDialog.Builder(this)
-            alterDialog.setTitle("No Internet")
-            alterDialog.setMessage("Internet Connection can't be established!")
-            alterDialog.setPositiveButton("Open Settings")
+            alterDialog.setTitle("Sin internet")
+            alterDialog.setMessage("¡No se puede establecer la conexión a Internet!")
+            alterDialog.setPositiveButton("Abrir Settings")
             { _, _ ->
                 val settingsIntent = Intent(Settings.ACTION_SETTINGS)
                 startActivity(settingsIntent)
             }
-            alterDialog.setNegativeButton("Exit")
+            alterDialog.setNegativeButton("Salir")
             { _, _ ->
                 finishAffinity()
             }
@@ -187,8 +187,8 @@ class RestaurantMenuActivity : AppCompatActivity() {
                 if (menuAdapter.getSelectedItemCount() > 0) {
 
                     val alterDialog = androidx.appcompat.app.AlertDialog.Builder(this)
-                    alterDialog.setTitle("Alert!")
-                    alterDialog.setMessage("Going back will remove everything from cart")
+                    alterDialog.setTitle("¡Alerta!")
+                    alterDialog.setMessage("Al volver, se eliminará todo del carrito.")
                     alterDialog.setPositiveButton("Okay")
                     { _, _ ->
                         super.onBackPressed()
@@ -213,9 +213,9 @@ class RestaurantMenuActivity : AppCompatActivity() {
                 fetchData()
         } else {
             val alterDialog = androidx.appcompat.app.AlertDialog.Builder(this)
-            alterDialog.setTitle("No Internet")
-            alterDialog.setMessage("Internet Connection can't be established!")
-            alterDialog.setPositiveButton("Open Settings")
+            alterDialog.setTitle("Sin internet")
+            alterDialog.setMessage("¡No se puede establecer la conexión a Internet!")
+            alterDialog.setPositiveButton("Abrir Settings")
             { _, _ ->
                 val settingsIntent = Intent(Settings.ACTION_SETTINGS)
                 //chose to make an intent to ACTION_SETTINGS instead of WIRELESS_ACTION_SETTINGS as it

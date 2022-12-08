@@ -91,7 +91,7 @@ class RestaurantMenuAdapter(
         holder.btnAddToCart.setTag(restaurantMenuItem.id + "")      //save the item id in textViewName Tag ,will be used to add to cart
         holder.txtSerialNumber.text = (position + 1).toString()     //position starts from 0
         holder.txtItemName.text = restaurantMenuItem.name
-        holder.txtItemPrice.text = """Rs.${restaurantMenuItem.cost_for_one}"""
+        holder.txtItemPrice.text = """Usd.${restaurantMenuItem.cost_for_one}"""
     }
 
     override fun getItemCount(): Int = restaurantMenu.size

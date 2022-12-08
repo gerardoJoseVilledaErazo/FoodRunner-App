@@ -346,8 +346,8 @@ class CartActivity : AppCompatActivity() {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)     //if the version is less than oreo
         {
-            val name = "Order Placed"
-            val description = "Your order has been placed!"
+            val name = "Pedido realizado"
+            val description = "¡Su orden ha sido puesta!"
             val importance = NotificationManager.IMPORTANCE_DEFAULT
 
             val notificationChannel = NotificationChannel(channelId, name, importance)

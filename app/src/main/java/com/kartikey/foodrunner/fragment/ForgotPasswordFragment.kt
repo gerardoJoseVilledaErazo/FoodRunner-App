@@ -125,7 +125,7 @@ class ForgotPasswordFragment(val contextParam: Context, val mobile_number: Strin
                                             forgotPasswordProgressDialog.visibility = View.GONE
                                             Toast.makeText(
                                                 contextParam,
-                                                "mSome Error occurred!!!",
+                                                "¡¡¡Ocurrió algún error!!!",
                                                 Toast.LENGTH_SHORT
                                             ).show()
                                         }) {
@@ -140,22 +140,22 @@ class ForgotPasswordFragment(val contextParam: Context, val mobile_number: Strin
                                 } catch (e: JSONException) {
                                     Toast.makeText(
                                         contextParam,
-                                        "Some unexpected error occurred!",
+                                        "¡Ocurrió un error inesperado!",
                                         Toast.LENGTH_SHORT
                                     ).show()
                                 }
                             } else {
                                 val alterDialog =
                                     androidx.appcompat.app.AlertDialog.Builder(activity as Context)
-                                alterDialog.setTitle("No Internet")
-                                alterDialog.setMessage("Internet Connection can't be established!")
-                                alterDialog.setPositiveButton("Open Settings")
+                                alterDialog.setTitle("Sin internet")
+                                alterDialog.setMessage("¡No se puede establecer la conexión a Internet!")
+                                alterDialog.setPositiveButton("Abrir Settings")
                                 { _, _ ->
                                     val settingsIntent = Intent(Settings.ACTION_SETTINGS)
                                     startActivity(settingsIntent)
 
                                 }
-                                alterDialog.setNegativeButton("Exit")
+                                alterDialog.setNegativeButton("Salir")
                                 { _, _ ->
                                     ActivityCompat.finishAffinity(activity as Activity)
                                 }
@@ -163,7 +163,7 @@ class ForgotPasswordFragment(val contextParam: Context, val mobile_number: Strin
                                 alterDialog.show()
                             }
                         } else {
-                            etConfirmForgotPassword.setError("Passwords don't match")
+                            etConfirmForgotPassword.setError("Las contraseñas no coinciden")
                         }
                     }
                 }
@@ -189,14 +189,14 @@ class ForgotPasswordFragment(val contextParam: Context, val mobile_number: Strin
 
         if (!ConnectionManager().checkConnectivity(activity as Context)) {
             val alterDialog = androidx.appcompat.app.AlertDialog.Builder(activity as Context)
-            alterDialog.setTitle("No Internet")
-            alterDialog.setMessage("Internet Connection can't be established!")
-            alterDialog.setPositiveButton("Open Settings")
+            alterDialog.setTitle("Sin internet")
+            alterDialog.setMessage("¡No se puede establecer la conexión a Internet!")
+            alterDialog.setPositiveButton("Abrir Settings")
             { _, _ ->
                 val settingsIntent = Intent(Settings.ACTION_SETTINGS)
                 startActivity(settingsIntent)
             }
-            alterDialog.setNegativeButton("Exit")
+            alterDialog.setNegativeButton("Salir")
             { _, _ ->
                 ActivityCompat.finishAffinity(activity as Activity)
             }

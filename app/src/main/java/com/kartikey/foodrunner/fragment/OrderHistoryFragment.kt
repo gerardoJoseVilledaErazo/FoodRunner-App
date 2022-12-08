@@ -134,7 +134,7 @@ class OrderHistoryFragment : Fragment() {
 
                         Toast.makeText(
                             activity,
-                            "Some Error occurred!",
+                            "¡Ocurrió algún error!",
                             Toast.LENGTH_SHORT
                         ).show()
                     }) {
@@ -151,21 +151,21 @@ class OrderHistoryFragment : Fragment() {
             } catch (e: JSONException) {
                 Toast.makeText(
                     context,
-                    "Some Unexpected error occurred!",
+                    "¡Ocurrió un error inesperado!",
                     Toast.LENGTH_SHORT
                 ).show()
             }
 
         } else {
             val alterDialog = androidx.appcompat.app.AlertDialog.Builder(activity as Context)
-            alterDialog.setTitle("No Internet")
-            alterDialog.setMessage("Internet Connection can't be established!")
-            alterDialog.setPositiveButton("Open Settings")
+            alterDialog.setTitle("Sin internet")
+            alterDialog.setMessage("¡No se puede establecer la conexión a Internet!")
+            alterDialog.setPositiveButton("Abrir Settings")
             { _, _ ->
                 val settingsIntent = Intent(Settings.ACTION_SETTINGS)
                 startActivity(settingsIntent)
             }
-            alterDialog.setNegativeButton("Exit")
+            alterDialog.setNegativeButton("Salir")
             { _, _ ->
                 finishAffinity(activity as Activity)
             }
@@ -180,14 +180,14 @@ class OrderHistoryFragment : Fragment() {
             setItemsForEachRestaurant()
         } else {
             val alterDialog = androidx.appcompat.app.AlertDialog.Builder(activity as Context)
-            alterDialog.setTitle("No Internet")
-            alterDialog.setMessage("Internet Connection can't be established!")
-            alterDialog.setPositiveButton("Open Settings")
+            alterDialog.setTitle("Sin internet")
+            alterDialog.setMessage("¡No se puede establecer la conexión a Internet!")
+            alterDialog.setPositiveButton("Abrir Settings")
             { _, _ ->
                 val settingsIntent = Intent(Settings.ACTION_SETTINGS)
                 startActivity(settingsIntent)
             }
-            alterDialog.setNegativeButton("Exit")
+            alterDialog.setNegativeButton("Salir")
             { _, _ ->
                 finishAffinity(activity as Activity)
             }

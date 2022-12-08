@@ -5,27 +5,27 @@
         <item
             android:id="@+id/home"
             android:icon="@drawable/ic_icon_home"
-            android:title="Home" />
+            android:title="@string/inicio" />
         <item
             android:id="@+id/profile"
             android:icon="@drawable/ic_icon_person"
-            android:title="My Profile" />
+            android:title="@string/mi_perfil" />
         <item
             android:id="@+id/favouriteRestaurants"
             android:icon="@drawable/ic_icon_favourite"
-            android:title="Favourite Restaurants" />
+            android:title="@string/restaurantes_favoritos" />
         <item
             android:id="@+id/orderHistory"
             android:icon="@drawable/ic_icon_order_history"
-            android:title="Order History" />
+            android:title="@string/historial_de_pedidos" />
         <item
             android:id="@+id/faqs"
             android:icon="@drawable/ic_icon_faqs"
-            android:title="FAQs" />
+            android:title="@string/faqs_preguntas_frecuentes" />
         <item
             android:id="@+id/logout"
             android:icon="@drawable/ic_icon_logout"
-            android:title="Log out" />
+            android:title="@string/cerrar_sesi_n" />
 
     </group>
 </menu>

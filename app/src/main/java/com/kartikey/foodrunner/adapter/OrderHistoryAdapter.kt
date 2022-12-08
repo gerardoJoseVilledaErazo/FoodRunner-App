@@ -109,7 +109,7 @@ class OrderHistoryAdapter(
                     {
                         Toast.makeText(
                             context,
-                            "Some Error occurred!",
+                            "¡Ocurrió algún error!",
                             Toast.LENGTH_SHORT
                         ).show()
                     }) {
@@ -126,7 +126,7 @@ class OrderHistoryAdapter(
             } catch (e: JSONException) {
                 Toast.makeText(
                     context,
-                    "Some Unexpected error occurred!",
+                    "¡Ocurrió un error inesperado!",
                     Toast.LENGTH_SHORT
                 ).show()
             }

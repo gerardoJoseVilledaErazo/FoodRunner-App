@@ -156,7 +156,7 @@ class LoginFragment(val contextParam: Context) : Fragment() {
 
                             Toast.makeText(
                                 contextParam,
-                                "Welcome " + data.getString("name"),
+                                "¡Bienvenido! " + data.getString("name"),
                                 Toast.LENGTH_LONG
                             ).show()
 
@@ -183,7 +183,7 @@ class LoginFragment(val contextParam: Context) : Fragment() {
 
                         Toast.makeText(
                             contextParam,
-                            "Some Error occurred!!!",
+                            "¡¡¡Ocurrió algún error!!!",
                             Toast.LENGTH_SHORT
                         ).show()
 
@@ -202,7 +202,7 @@ class LoginFragment(val contextParam: Context) : Fragment() {
                 btnLogin.visibility = View.VISIBLE
                 Toast.makeText(
                     contextParam,
-                    "Some unexpected error occurred!",
+                    "¡Ocurrió un error inesperado!",
                     Toast.LENGTH_SHORT
                 ).show()
             }
@@ -210,14 +210,14 @@ class LoginFragment(val contextParam: Context) : Fragment() {
             btnLogin.visibility = View.VISIBLE
 
             val alterDialog = androidx.appcompat.app.AlertDialog.Builder(activity as Context)
-            alterDialog.setTitle("No Internet")
-            alterDialog.setMessage("Internet Connection can't be established!")
-            alterDialog.setPositiveButton("Open Settings")
+            alterDialog.setTitle("Sin internet")
+            alterDialog.setMessage("¡No se puede establecer la conexión a Internet!")
+            alterDialog.setPositiveButton("Abrir Settings")
             { _, _ ->
                 val settingsIntent = Intent(Settings.ACTION_SETTINGS)
                 startActivity(settingsIntent)
             }
-            alterDialog.setNegativeButton("Exit")
+            alterDialog.setNegativeButton("Salir")
             { _, _ ->
                 ActivityCompat.finishAffinity(activity as Activity)
             }
@@ -235,14 +235,14 @@ class LoginFragment(val contextParam: Context) : Fragment() {
     override fun onResume() {
         if (!ConnectionManager().checkConnectivity(activity as Context)) {
             val alterDialog = androidx.appcompat.app.AlertDialog.Builder(activity as Context)
-            alterDialog.setTitle("No Internet")
-            alterDialog.setMessage("Internet Connection can't be established!")
-            alterDialog.setPositiveButton("Open Settings")
+            alterDialog.setTitle("Sin internet")
+            alterDialog.setMessage("¡No se puede establecer la conexión a Internet!")
+            alterDialog.setPositiveButton("Abrir Settings")
             { _, _ ->
                 val settingsIntent = Intent(Settings.ACTION_SETTINGS)
                 startActivity(settingsIntent)
             }
-            alterDialog.setNegativeButton("Exit")
+            alterDialog.setNegativeButton("Salir")
             { _, _ ->
                 ActivityCompat.finishAffinity(activity as Activity)
             }
