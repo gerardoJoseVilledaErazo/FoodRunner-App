@@ -12,19 +12,7 @@
         android:layout_height="225dp"
         android:layout_centerInParent="true"
         android:padding="10dp"
-        android:src="@drawable/logo11"
+        android:src="@drawable/logo12"
         tools:ignore="ContentDescription" />
-    <!--
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="15dp"
-            android:text="@string/created_by_kartikey_sharma"
-            android:textColor="#ffffff"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-    -->
 
 </RelativeLayout>

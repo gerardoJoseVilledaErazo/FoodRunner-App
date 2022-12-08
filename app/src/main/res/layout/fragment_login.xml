@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorLogoMain">
+    android:background="@color/colorper">
 
     <RelativeLayout
         android:id="@+id/loginProgressDialog"
@@ -35,7 +35,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="30dp"
-            android:src="@drawable/food_runner_logo"
+            android:src="@drawable/eating"
             tools:ignore="ContentDescription" />
 
         <EditText
@@ -117,7 +117,7 @@
         android:layout_marginBottom="20dp"
         android:text="@string/don_t_have_an_account_sign_up_now"
         android:textColor="#fff"
-        android:textSize="20sp" />
+        android:textSize="18sp" />
 
 </RelativeLayout><!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
     <!--    xmlns:tools="http://schemas.android.com/tools"-->
