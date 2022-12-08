@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:background="@color/colorLogoMain">
+        android:background="@color/colorper">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -37,7 +37,7 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_marginTop="50dp"
-                android:src="@drawable/food_runner_logo"
+                android:src="@drawable/eating"
                 tools:ignore="ContentDescription" />
 
             <TextView
