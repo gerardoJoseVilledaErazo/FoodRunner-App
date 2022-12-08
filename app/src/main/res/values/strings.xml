@@ -47,13 +47,13 @@
     <string name="no_restaurants_found">No se encontraron restaurantes</string>
 
     <!-- Questions and Answers for FAQs-->
-    <string name="question1">Q1. ¿Por qué Food Runner está haciendo esto?</string>
-    <string name="answer1">A1. En Food Runner siempre nos esforzamos por agregar valor a su negocio. Entendemos los desafíos a los que se enfrenta a diario para obtener material de embalaje de la mejor calidad. Food Runner Packaging Assist está aquí para encargarse de todas sus necesidades de embalaje.</string>
+    <string name="question1">Q1. ¿Por qué LetsEAT está haciendo esto?</string>
+    <string name="answer1">A1. En LetsEAT siempre nos esforzamos por agregar valor a su negocio. Entendemos los desafíos a los que se enfrenta a diario para obtener material de embalaje de la mejor calidad. LetsEAT Packaging Assist está aquí para encargarse de todas sus necesidades de embalaje.</string>
     <string name="question2">Q2. ¿En qué se diferencian de otras aplicaciones de entrega?</string>
     <string name="answer2">
         A2. Los mejores productos: solo enumeramos los productos que han superado nuestras pruebas y son los más adecuados para la entrega.
         Ayudarán a brindar una mejor experiencia al consumidor, para que pueda obtener pedidos repetidos de clientes satisfechos.\n\nLos mejores precios - Hemos
-        negociado tarifas con nuestros distribuidores exclusivamente para Restaurante FoodRunner.\n\nComodidad: no es necesario regatear los precios.
+        negociado tarifas con nuestros distribuidores exclusivamente para Restaurante LetsEAT.\n\nComodidad: no es necesario regatear los precios.
         No es necesario hacer un seguimiento de la entrega. Hacemos un seguimiento de todos los pedidos para garantizar que tenga una experiencia sin problemas.</string>
     <string name="question3">Q3. ¿Puedo pedir en 2 o más restaurantes al mismo tiempo?</string>
     <string name="answer3">A3. No. Por el momento solo permitimos realizar pedidos de un restaurante. Cada restaurante tiene una gran variedad para elegir y creemos que no se sentirá decepcionado.</string>
